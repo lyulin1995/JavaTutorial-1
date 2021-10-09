@@ -2,6 +2,7 @@ package com.linlyu;
 
 import java.awt.*;
 import java.util.Date;
+import java.util.Locale;
 
 public class Main {
 
@@ -48,6 +49,51 @@ public class Main {
         point1.x = 2;
         System.out.println(point2);
         // point2 changes since the reference types are copied by the references (the address of Point).
+
+
+        // Strings:
+        String message = new String("Hello World" + "!!");
+        // Strings are reference types in Java, so we use "new" to initialize a string variable.
+        System.out.println(message);
+        System.out.println(message.endsWith("!!"));
+        // To check if the string ends with !!, will return a boolean value.
+        System.out.println(message.length());
+        System.out.println(message.indexOf("H"));
+        // Return the index of the first occurrence of the character or the string that we pass here.
+        System.out.println(message.indexOf("sky"));
+        // If the message doesn't contain certain characters or words or sentences, it returns -1.
+        System.out.println(message.replace("!", "*"));
+        // target and replacement are parameters, "!" and "*" are arguments.
+        // Parameters are the holes that we define in our methods.
+        // Arguments are the actual values that we pass to these methods.
+        System.out.println(message);
+        // .replace() doesn't modify the origin string, it returns a new string.
+        // In Java, strings are immutable.
+        System.out.println(message.toLowerCase());
+        String message2 = new String("   Hello World" + "!!  ");
+        System.out.println(message2);
+        System.out.println(message2.trim());
+        // Use trim to get rid of unnecessary spaces at the beginning or at the end of a string.
+
+
+        // Escape Sequences:
+        String message3 = "Hello \"Mosh\"";
+        System.out.println(message3);
+        // c:\Windows\...
+        String message4 = "c:\\Windows\\...";
+        System.out.println(message4);
+        String message5 = "c:\nWindows\\...";
+        System.out.println(message5);
+        String message6 = "c:\tWindows\\...";
+        System.out.println(message6);
+
+
+
+
+
+
+
+
 
 
     }
