@@ -114,13 +114,63 @@ public class Main {
 
 
         // Constants:
+        final float PI = 3.14F;
+        // Use "final", java compiler will treat PI as a constant. We cannot change its value later on.
+        // By convention, we use all capital letters to name constants.
 
 
+        // Arithmetic Expressions:
+        int result = 10 / 3;
+        System.out.println(result);
+        // In Java, the division of two whole numbers is a whole number.
+        double result2 = (double) 10 / (double) 3;
+        System.out.println(result2);
+        // "/" is arithmetic operator; and numbers here are called operands.
+        int w = 1;
+        w++;  // or "++w"
+        System.out.println(w);
+        // "++" here is increment operator.
+        int a = 1;
+        int b = a++;
+        System.out.println(a);
+        System.out.println(b);
+        // Here a would be 2 and b would be 1.
+        // Since first the value of a will get copied to b, so b would be 1;
+        // then a will be incremented by 1.
+        int a2 = 1;
+        int b2 = ++a2;
+        System.out.println(a2);
+        System.out.println(b2);
+        // If we use prefix, both "b2" and "a1" are 2.
+        // Since first a1 will be incremented by 1, so it will be 1;
+        // then it will be copied to b2.
+        int a3 = 1;
+        a3 += 2;  // reduce the value of a3 by 2: a3 -= 2;
+        System.out.println(a3);
+        // increase the value of a3 by 2.
+        // for multiply and divide: a3 *= 2; or a3 /= 2;
 
 
+        // Order of Operations: (); * /; + -.
 
 
-
+        // Casting:
+        // Implicit casting: automatic conversion
+        short c = 1;
+        int d = c + 2;
+        System.out.println(d);
+        // Whenever we have a value and that value can be converted to a data type that is bigger casting
+        // or happens implicitly or automatically.
+        // byte > short > int > long > float > double
+        // Explicit casting:
+        double c2 = 2.1;
+        int d2 = (int)c2 + 2;
+        System.out.println(d2);
+        // Explicit casting can only happen between compatible types.
+        // If you want to convert a string to int/short... type:
+        String c3 = "5";
+        int d3 = Integer.parseInt(c3) + 4;
+        System.out.println(d3);  // also for short/float/double...
 
 
 
