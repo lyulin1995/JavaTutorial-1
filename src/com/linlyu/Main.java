@@ -1,6 +1,7 @@
 package com.linlyu;
 
 import java.awt.*;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.Locale;
 
@@ -88,6 +89,34 @@ public class Main {
         System.out.println(message6);
 
         // Arrays:
+        int[] numbers = new int[5];
+        // Arrays is reference type, so we should use new. 5 is the size of the array.
+        numbers[0] = 1;
+        numbers[1] = 2;
+        // Use index to access items.
+        System.out.println(numbers); // not going to work
+        // return [I@2f2c9b19, since this is calculated based on the address in memory.
+        System.out.println(Arrays.toString(numbers));
+        int[] numbers2 = { 2, 3, 5, 1, 4 };
+        System.out.println(numbers2.length);
+        Arrays.sort(numbers2);
+        // In java, Arrays have fixed size. Once we create them, we cannot add or remove additional items.
+        System.out.println(Arrays.toString(numbers2));
+
+
+        // Multi-dimensional Arrays:
+        int[][] numbers3 = new int[2][3];
+        numbers3[0][0] = 1;
+        System.out.println(Arrays.deepToString(numbers3));
+        // Use deepToString for multi-dimensional Arrays.
+        int[][] numbers4 = { {1, 2, 3}, { 4, 5, 6}};
+        System.out.println(Arrays.deepToString(numbers4));
+
+
+        // Constants:
+
+
+
 
 
 
