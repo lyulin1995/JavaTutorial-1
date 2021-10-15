@@ -1,6 +1,7 @@
 package com.linlyu;
 
 import java.awt.*;
+import java.text.NumberFormat;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.Locale;
@@ -193,6 +194,25 @@ public class Main {
         int result10 = (int) (Math.random() * 100);
         // We should add (), otherwise it will always be 0 since the int of Math.random is 0.
         System.out.println(result10);
+
+
+        // Formatting Numbers:
+        // NumberFormat class is an abstract class, which means it cannot create instance.
+        // NumberFormat currency = new NumberFormat(); not going to work
+        NumberFormat currency =  NumberFormat.getCurrencyInstance();
+        String result11 =  currency.format(1234567.891);
+        System.out.println(result11);
+        // Output: €1,234,567.89
+        NumberFormat percentInstance =  NumberFormat.getPercentInstance();
+        String result12 =  percentInstance.format(0.1);
+        System.out.println(result12);
+        // Output: 10%
+        // Method chaining:
+        // NumberFormat.getPercentInstance() returns a NumberFormat object.
+        String result13 = NumberFormat.getPercentInstance().format(0.3);
+        System.out.println(result13);
+
+
 
 
 
