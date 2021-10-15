@@ -173,6 +173,30 @@ public class Main {
         System.out.println(d3);  // also for short/float/double...
 
 
+        // The Math Class:
+        int result3 = Math.round(1.1F);  // round a float number to a whole number
+        System.out.println(result3);
+        int result4 = (int) Math.ceil(1.1F);
+        // ceil: return the smallest integer that is greater than or equal to this number.
+        System.out.println(result4);
+        int result5 = (int) Math.floor(1.1F);
+        // floor: return the largest integer that is smaller or equal to this number.
+        System.out.println(result5);
+        int result6 = Math.max(1, 15);
+        System.out.println(result6);
+        double result7 = Math.random();  // floating-point number between 0 and 1.
+        System.out.println(result7);
+        double result8 = Math.random() * 100; // we want number between 0 and 100,
+        System.out.println(result8);
+        int result9 = (int) Math.round(Math.random() * 100);
+        System.out.println(result9);
+        int result10 = (int) (Math.random() * 100);
+        // We should add (), otherwise it will always be 0 since the int of Math.random is 0.
+        System.out.println(result10);
+
+
+
+
 
 
 
