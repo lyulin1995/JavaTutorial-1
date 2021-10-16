@@ -5,6 +5,7 @@ import java.text.NumberFormat;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.Locale;
+import java.util.Scanner;
 
 public class Main {
 
@@ -212,6 +213,28 @@ public class Main {
         String result13 = NumberFormat.getPercentInstance().format(0.3);
         System.out.println(result13);
 
+
+        // Reading Input:
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Age: ");  // ln: starting a new line
+        Byte ageByte = scanner.nextByte();  // reading a Byte data
+        System.out.println("You are " + ageByte);
+        // All the method starting with next.
+        // Java will automatically convert the ageByte from Byte to String Type. -> implicit casting
+        System.out.print("Name: ");
+        String name = scanner.next(); // read a string data
+        System.out.println("You are " + name);
+        // Only returns Lin when type Lin Lyu
+        Scanner scanner1 = new Scanner(System.in);
+        System.out.print("New name: ");
+        String name1 = scanner1.nextLine();
+        System.out.println("New name is " + name1);
+        // But it will store and display spaces.
+        Scanner scanner2 = new Scanner(System.in);
+        System.out.print("New name 2: ");
+        String name2 = scanner2.nextLine().trim();
+        System.out.println("New name 2 is " + name2);
+        // Use trim method it will not store the spaces at the beginning or at the end.
 
 
 
