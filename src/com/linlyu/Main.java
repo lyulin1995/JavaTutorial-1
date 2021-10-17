@@ -40,7 +40,7 @@ public class Main {
         System.out.println(now);
 
 
-        // Primitive Types vs Reference Types
+        // Primitive Types vs Reference Types:
         byte x = 1;
         byte y = x;
         x = 2;
@@ -89,6 +89,7 @@ public class Main {
         System.out.println(message5);
         String message6 = "c:\tWindows\\...";
         System.out.println(message6);
+
 
         // Arrays:
         int[] numbers = new int[5];
