@@ -55,4 +55,28 @@ public class ControlFlow {
         // if the condition is True, the variable className will be assigned "First";
         // Otherwise it will be assigned "Economy".
     }
+
+    public static void switchStatement() {
+        String role = "admin";
+//        if (role == "admin")
+//            System.out.println("You are an admin.");
+//        else if (role == "moderator")
+//            System.out.println("You are a moderator.");
+//        else
+//            System.out.println("You are a guest.");
+
+        switch (role) {
+            case "admin":
+                System.out.println("You are an admin.");
+                break;
+            case "moderator":
+                System.out.println("You are a moderator.");
+                break;
+            default:
+                System.out.println("You are a guest.");
+                // don't need "break" statement since we are at the end of the block.
+                // It will automatically jump out of this block.
+
+        }
+    }
 }
